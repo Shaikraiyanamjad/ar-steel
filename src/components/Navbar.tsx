@@ -26,10 +26,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-heading text-xl md:text-2xl font-bold tracking-wider text-primary-foreground">
-          AR SHEET METAL
-        </a>
-
+        <a href="/" className="flex items-center">
+            <img
+              src="/logo-s.png"
+              alt="AR Sheet Metal"
+              className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain mb-4 mt-4"
+            />
+          </a>
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (

@@ -1,18 +1,14 @@
 import { useState } from "react";
-import commercialImg from "@/assets/project-commercial.jpg";
-import residentialImg from "@/assets/project-residential.jpg";
-import customImg from "@/assets/project-custom.jpg";
-import laserImg from "@/assets/services-laser.jpg";
 
 const categories = ["All", "Commercial", "Residential", "Custom Fabrication"];
 
 const projects = [
-  { img: commercialImg, title: "Manhattan Office Tower — ACM Panels", cat: "Commercial" },
-  { img: residentialImg, title: "Brooklyn Brownstone — Standing Seam Roof", cat: "Residential" },
-  { img: customImg, title: "Custom Skylight — Williamsburg Loft", cat: "Custom Fabrication" },
-  { img: laserImg, title: "Precision CNC Components — Contractor Supply", cat: "Commercial" },
-  { img: residentialImg, title: "Queens Residence — Metal Flashing System", cat: "Residential" },
-  { img: commercialImg, title: "Midtown Plaza — Architectural Panels", cat: "Commercial" },
+  { img: '/img1.png', title: "Manhattan Office Tower — ACM Panels", cat: "Commercial" },
+  { img: '/img2.png', title: "Brooklyn Brownstone — Standing Seam Roof", cat: "Residential" },
+  { img: '/img3.png', title: "Custom Skylight — Williamsburg Loft", cat: "Custom Fabrication" },
+  { img: '/img4.png', title: "Precision CNC Components — Contractor Supply", cat: "Commercial" },
+  { img: '/img5.png', title: "Queens Residence — Metal Flashing System", cat: "Residential" },
+  { img: '/img6.png', title: "Midtown Plaza — Architectural Panels", cat: "Commercial" },
 ];
 
 const ProjectsSection = () => {

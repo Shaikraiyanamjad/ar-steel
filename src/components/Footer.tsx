@@ -6,9 +6,16 @@ const Footer = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <h3 className="font-heading text-xl font-bold tracking-wider mb-4">AR SHEET METAL INC.</h3>
+          <a href="/" className="flex items-center">
+            <img
+              src="/logo-s.png"
+              alt="AR Sheet Metal"
+              className="h-14 sm:h-16 md:h-18 lg:h-20 w-auto object-contain mb-4"
+            />
+          </a>
           <p className="text-primary-foreground/60 font-body text-sm leading-relaxed">
-            Brooklyn-based precision sheet metal fabrication serving New York and the tri-state area.
+            Brooklyn-based precision sheet metal fabrication serving New York
+            and the tri-state area.
           </p>
           <div className="flex gap-3 mt-5">
             {[Facebook, Instagram, Linkedin].map((Icon, i) => (
@@ -26,34 +33,77 @@ const Footer = () => (
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-heading text-sm uppercase tracking-widest font-semibold mb-4">Quick Links</h4>
+          <h4 className="font-heading text-sm uppercase tracking-widest font-semibold mb-4">
+            Quick Links
+          </h4>
           <ul className="space-y-2 font-body text-sm text-primary-foreground/60">
-            {["About", "Services", "Projects", "Process", "Contact"].map((l) => (
-              <li key={l}>
-                <a href={`#${l.toLowerCase()}`} className="hover:text-accent transition-colors">{l}</a>
-              </li>
-            ))}
+            {["About", "Services", "Projects", "Process", "Contact"].map(
+              (l) => (
+                <li key={l}>
+                  <a
+                    href={`#${l.toLowerCase()}`}
+                    className="hover:text-accent transition-colors"
+                  >
+                    {l}
+                  </a>
+                </li>
+              ),
+            )}
           </ul>
         </div>
 
         {/* Services */}
         <div>
-          <h4 className="font-heading text-sm uppercase tracking-widest font-semibold mb-4">Services</h4>
+          <h4 className="font-heading text-sm uppercase tracking-widest font-semibold mb-4">
+            Services
+          </h4>
           <ul className="space-y-2 font-body text-sm text-primary-foreground/60">
-            {["CNC Cutting", "Laser Cutting", "ACM Panels", "Architectural Metal", "Custom Skylights", "Roofing Panels"].map((s) => (
-              <li key={s}><span>{s}</span></li>
+            {[
+              "CNC Cutting",
+              "Laser Cutting",
+              "ACM Panels",
+              "Architectural Metal",
+              "Custom Skylights",
+              "Roofing Panels",
+            ].map((s) => (
+              <li key={s}>
+                <span>{s}</span>
+              </li>
             ))}
           </ul>
         </div>
 
         {/* Contact */}
         <div>
-          <h4 className="font-heading text-sm uppercase tracking-widest font-semibold mb-4">Contact</h4>
+          <h4 className="font-heading text-sm uppercase tracking-widest font-semibold mb-4">
+            Contact
+          </h4>
           <ul className="space-y-2 font-body text-sm text-primary-foreground/60">
             <li>98 Anthony St, Brooklyn, NY 11222</li>
-            <li><a href="tel:7183872473" className="hover:text-accent transition-colors">(718) 387-2473</a></li>
-            <li><a href="tel:3475728139" className="hover:text-accent transition-colors">(347) 572-8139</a></li>
-            <li><a href="mailto:ARSHEETMETALINC@gmail.com" className="hover:text-accent transition-colors text-xs">ARSHEETMETALINC@gmail.com</a></li>
+            <li>
+              <a
+                href="tel:7183872473"
+                className="hover:text-accent transition-colors"
+              >
+                (718) 387-2473
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:3475728139"
+                className="hover:text-accent transition-colors"
+              >
+                (347) 572-8139
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:ARSHEETMETALINC@gmail.com"
+                className="hover:text-accent transition-colors text-xs"
+              >
+                ARSHEETMETALINC@gmail.com
+              </a>
+            </li>
           </ul>
         </div>
       </div>
