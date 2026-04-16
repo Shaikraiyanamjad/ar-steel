@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
+
+    --primary: 0 0% 7%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 10% 23%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 10% 92%;
+    --muted-foreground: 210 8% 45%;
+
+    --accent: 207 44% 49%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 10% 85%;
+    --input: 210 10% 85%;
+    --ring: 207 44% 49%;
+
+    --radius: 0.25rem;
+
+    --metallic-start: 210 10% 75%;
+    --metallic-end: 210 10% 45%;
+    --steel-blue: 207 44% 49%;
+    --dark-steel: 210 10% 15%;
+    --warm-spark: 30 100% 55%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient-metallic {
+    background: linear-gradient(135deg, hsl(210, 10%, 75%), hsl(0, 0%, 100%), hsl(210, 10%, 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-dark {
+    background: linear-gradient(180deg, hsl(0, 0%, 7%) 0%, hsl(210, 10%, 12%) 100%);
+  }
+
+  .bg-gradient-steel {
+    background: linear-gradient(135deg, hsl(210, 10%, 15%) 0%, hsl(207, 44%, 25%) 100%);
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 px-4;
+  }
+}
